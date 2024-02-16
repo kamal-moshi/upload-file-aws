@@ -30,15 +30,14 @@ Copy code
 urls (array of strings): A list of URLs representing the locations of the uploaded file(s) on S3.
 Error Response (500 Internal Server Error)
 json
-Copy code
+
 {
   "message": "Error message details..."
 }
 message (string): A detailed error message for better troubleshooting.
 Example Usage (Frontend)
 Using Fetch API
-javascript
-Copy code
+
 const uploadFile = async (file, bucket, key) => {
   const formData = new FormData();
   formData.append('file', file);
