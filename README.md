@@ -5,13 +5,12 @@
 The AWS S3 File Upload API allows you to effortlessly upload files to an AWS S3 bucket with the added feature of optional WebP conversion for images. This API is designed to handle file submissions through a POST request, facilitating seamless uploads to a specified S3 bucket.
 
 ## Endpoint
-
+#  base url POST : https://uploadfile.moshimoshi.cloud/api/v1/upload:bucket/:key
 ```plaintext
-POST /api/v1/upload/:bucket/:key
 Request
 URL Parameters
-:bucket (string): The S3 bucket where the file will be uploaded.
-:key (string): The key or path within the bucket for storing the file.
+### :bucket (string): The S3 bucket where the file will be uploaded.
+###:key (string): The key or path within the bucket for storing the file.
 Headers
 No specific headers are required for this request.
 
@@ -25,7 +24,7 @@ Copy code
 {
   "urls": [
     "https://s3.amazonaws.com/bucket/key/filename1.webp",
-    "https://s3.amazonaws.com/bucket/key/filename2.jpg",
+    "https://s3.amazonaws.com/bucket/key/filename2.webp",
     ...
   ]
 }
