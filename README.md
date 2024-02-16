@@ -18,8 +18,6 @@ The request body should adhere to the standard multipart/form-data format for se
 
 Response
 Success Response (200 OK)
-json
-Copy code
 {
   "urls": [
     "https://s3.amazonaws.com/bucket/key/filename1.webp",
